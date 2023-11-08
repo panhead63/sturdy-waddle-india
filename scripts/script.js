@@ -86,7 +86,7 @@ $('#btnLoadData').click(function() {
 
     let jsonURL = "https://rachelthompson.github.io/sturdy-waddle-india/demo.json";
 
-    $.ajax({
+    $.script({
         url: jsonURL,
         dataType: "json",
         success: function(data) {
