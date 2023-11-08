@@ -91,7 +91,7 @@ $('#btnLoadData').click(function() {
         dataType: "json",
         success: function(data) {
             console.log(data.firstName);
-            $("#firstName").val(data.firstName);
+            $("#fName").val(data.firstName);
             console.log(data.email);
 
             $('input[type=checkbox]').each(function () {
