@@ -84,10 +84,8 @@ function clearResult(){
 $('#btnLoadData').click(function() {
     console.log("clicked");
 
-    let jsonURL = "https://rachelthompson.github.io/sturdy-waddle-india/demo.json";
-
-    $.script({
-        url: jsonURL,
+    $.ajax({
+        url: https://panhead63.github.io/sturdy-waddle-india/demo.json,
         dataType: "json",
         success: function(data) {
             console.log(data.firstName);
