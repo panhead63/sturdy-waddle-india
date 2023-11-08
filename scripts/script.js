@@ -84,14 +84,14 @@ function clearResult(){
 $('#btnLoadData').click(function() {
     console.log("clicked");
 
-    let jsonURL = "https://barrycumbie.github.io/376-india-lab/demo.json";
+    let jsonURL = "https://rachelthompson.github.io/sturdy-waddle-india/demo.json";
 
     $.ajax({
         url: jsonURL,
         dataType: "json",
         success: function(data) {
             console.log(data.firstName);
-            $("#noSpaces").val(data.firstName);
+            $("#firstName").val(data.firstName);
             console.log(data.email);
 
             $('input[type=checkbox]').each(function () {
